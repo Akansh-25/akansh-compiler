@@ -11,13 +11,13 @@
     
     display: flex;
     justify-content: space-around;
-    background-color: cadetblue;
+    background-color: rgb(222, 169, 223);
     font-family: papyrus;
     font-size: 1.4em;
     align-items: center;
     color: white;
     padding: 0.3em;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid rgb(9, 17, 9);
 }
 
 textarea{

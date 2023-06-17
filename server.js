@@ -28,7 +28,7 @@ app.post('/' , function (req , res ) {
     
 	var code = req.body.codePart;	
 	var input = req.body.input;
-    
+    var inputRadio= "false";
     console.log(input);
     if(input != "")inputRadio = "true";
     var lang = "C++";
@@ -42,10 +42,10 @@ app.post('/' , function (req , res ) {
         {    
             
             //
-        	var envData = { OS : "windows" , cmd : "g++",options: {timeout:1000 } };	   	
+        	var envData = { OS : "mac" , cmd : "g++",options: {timeout:1000 } };	   	
         	compiler.compileCPPWithInput(envData , code ,input , function (data) {
         		if(data.error)
-        		{   console.log("nimit, what is this?")
+        		{   console.log("Akansh, what is this?")
         			// res.send(data.error); 
                     res.render("index",{
                         code,
